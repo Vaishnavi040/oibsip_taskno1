@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Tourist Places</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Explore Indian Tourist Places</h1>
+    </header>
+    <main>
+        <section class="destination">
+            <div class="destination-info">
+                <h2>Taj Mahal</h2>
+                <p>A symbol of love and one of the seven wonders of the world.</p>
+                <button onclick="showDetails('tajMahal')">Show More</button>
+            </div>
+            <div class="image-container">
+                <img src="taj_mahal.jpg" alt="Taj Mahal">
+            </div>
+        </section>
+        <section class="destination">
+            <div class="destination-info">
+                <h2>Goa Beaches</h2>
+                <p>Relax on the beautiful sandy beaches and enjoy the vibrant nightlife.</p>
+                <button onclick="showDetails('goaBeaches')">Show More</button>
+            </div>
+            <div class="image-container">
+                <img src="goa_beaches.jpg" alt="Goa Beaches">
+            </div>
+        </section>
+    </main>
+    <script>
+        function showDetails(destination) {
+            if (destination === 'tajMahal') {
+                alert("Taj Mahal: The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra.");
+            } else if (destination === 'goaBeaches') {
+                alert("Goa Beaches: Goa is famous for its stunning beaches that attract tourists from all over the world.");
+            }
+        }
+    </script>
+</body>
+</html>
